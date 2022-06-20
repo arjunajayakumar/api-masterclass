@@ -1,0 +1,27 @@
+{
+  "name": "devcamp_api",
+  "version": "1.0.0",
+  "description": "devcamper_api",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjune64/api-masterclass.git"
+  },
+  "author": "Arjun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arjune64/api-masterclass/issues"
+  },
+  "homepage": "https://github.com/arjune64/api-masterclass#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
