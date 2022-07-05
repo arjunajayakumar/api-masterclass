@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import { connectDB } from './config/db';
 import color from 'colors';
+import { errorHandler } from './middlewares/error';
 
 // Route files
 import { router } from './routes/bootcamps';
@@ -24,6 +25,8 @@ if (process.env.NODE_ENV === 'developement') {
 
 // Mount routes
 app.use('/api/v1/bootcamps', router);
+
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
