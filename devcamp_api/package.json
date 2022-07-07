@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "NODE_ENV=production node server",
-    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node server"
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node server",
+    "import-data": "node --experimental-modules --es-module-specifier-resolution=node seeder -i",
+    "destroy-data": "node --experimental-modules --es-module-specifier-resolution=node seeder -d"
   },
   "repository": {
     "type": "git",
